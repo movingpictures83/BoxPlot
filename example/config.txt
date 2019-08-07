@@ -1,0 +1,2 @@
+Prefix plugins/BoxPlot/example/
+Plugin BoxPlot inputfile abundR.csv outputfile boxplot
