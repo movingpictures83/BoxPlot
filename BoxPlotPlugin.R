@@ -1,6 +1,8 @@
 
 input <- function(inputfile) {
-   rawdata <<- read.csv(inputfile);
+   rawdata <<- as.matrix(read.csv(inputfile));
+   rawdata <<- apply(rawdata, 1, as.numeric)
+   rawdata <<- t(rawdata)
 }
 
 run <- function() {
